@@ -1,4 +1,4 @@
-from adventure.models.py import Player, Room
+from adventure.models import Player, Room
 
 class World:
     def __init__(self):
