@@ -22,10 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('08+y(cpnf(vju9s79##tm2o-d2ke(@#ldgq+-gbiul1yzhdtjp')
+SECRET_KEY = '08+y(cpnf(vju9s79##tm2o-d2ke(@#ldgq+-gbiul1yzhdtjp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=False)
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://archimedesbackend.herokuapp.com/']
 
