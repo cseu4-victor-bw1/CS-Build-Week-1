@@ -20,7 +20,7 @@ class World:
         room_count = 0
 
         direction = 1  
-         previous_room = None
+        previous_room = None
         while room_count < num_rooms:
             print(f'direction:{direction}, room count:{room_count}, x:{x}, y:{y}')
             if direction > 0 and x < size_x - 1:
@@ -34,7 +34,7 @@ class World:
                 y += 1
                 direction *= -1
 
-            room = Room(count, 'Welcome to Terror', 'Terror lives here.', x, y)
+            room = Room(room_count, 'Welcome to Terror', 'Terror lives here.', x, y)
             print(room)
             room.save()
             self.grid[y][x] = room
@@ -46,7 +46,7 @@ class World:
             previous_room = room
             room_count += 1
   
-  def print_rooms(self):
+    def print_rooms(self):
         '''
         Print the rooms in room_grid in ascii characters.
         '''
