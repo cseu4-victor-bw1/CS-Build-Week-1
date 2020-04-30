@@ -14,6 +14,7 @@ from adventure.models import Room
 @csrf_exempt
 @api_view(["GET"])
 def initialize(request):
+    print(request)
     user = request.user
     player = user.player
     player_id = player.id
@@ -23,7 +24,7 @@ def initialize(request):
     return JsonResponse({'uuid': uuid, 'name':player.user.username, 'title':room.title, 'description':room.description, 'players':players}, safe=True)
 
 # Create Get Endpoint
-# @csrf_exempt
+# @csrf_exempt/
 @api_view(["GET"])
 def rooms(request):
   rooms = Room.objects.all().values()

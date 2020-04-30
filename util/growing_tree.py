@@ -1,5 +1,6 @@
 # from django.contrib.auth.models import User
 from adventure.models import Player, Room
+from util.details import Rooms, Descriptions
 
 class World:
     def __init__(self):
@@ -34,7 +35,7 @@ class World:
                 y += 1
                 direction *= -1
 
-            room = Room(room_count, 'Welcome to Terror', 'Terror lives here.', x, y)
+            room = Room(room_count, Rooms[room_count], Descriptions[room_count], x, y)
             print(room)
             room.save()
             self.grid[y][x] = room
