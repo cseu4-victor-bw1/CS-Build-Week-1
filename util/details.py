@@ -53,9 +53,7 @@ Descriptions = [
 "He’s not the man she thought he was. In fact, he’s not a man at all.",
 "Suburbia is actually purgatory.",
 "Someone discovers that we are all actually robots — who created us and why?",
-"She’s not an angel, she’s a demon.
-
-",
+"She’s not an angel, she’s a demon.",
 " An old shipwreck washes ashore.",
 "A sinkhole swallows a house whole and unleashes something from beneath.",
 " A man suffers from sleep paralysis at the worst possible time.",
